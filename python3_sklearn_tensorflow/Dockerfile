@@ -12,15 +12,6 @@ RUN  apt-get update \
                      libblas-dev liblapack-dev libatlas-base-dev gfortran \
   && rm -rf /var/lib/apt/lists/*
 
-#WORKDIR /tmp
-#RUN wget https://www.python.org/ftp/python/3.5.0/Python-3.5.0.tar.xz
-#RUN tar -xf Python-3.5.0.tar.xz
-#WORKDIR /tmp/Python-3.5.0
-#RUN ./configure
-#RUN make
-#RUN make install
-
-#RUN rm -rf /tmp/Python-3.5.0.tar.xz /tmp/Python-3.5.0
 
 RUN pip3 install packaging appdirs ipython numpy scipy matplotlib jupyter pandas sympy scikit-learn tensorflow
 
