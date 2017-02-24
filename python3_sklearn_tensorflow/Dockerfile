@@ -16,7 +16,7 @@ RUN  apt-get update \
 RUN pip3 install packaging appdirs ipython numpy scipy matplotlib jupyter pandas sympy scikit-learn tensorflow
 
 
-RUN cd /home
+#RUN cd /home
 #RUN wget http://files.grouplens.org/datasets/movielens/ml-20m.zip
 #RUN unzip ml-20m.zip -d data
 
